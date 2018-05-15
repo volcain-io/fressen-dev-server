@@ -52,6 +52,26 @@ debug: Port        : 1337
 
 ### GET Endpoints
 
+#### Get all neighborhoods
+```
+http://localhost:1337/neighborhoods/
+```
+
+#### Get a neighborhood by id
+```
+http://localhost:1337/neighborhoods/<neighborhood_type_id>
+```
+
+#### Get all cuisines
+```
+http://localhost:1337/cuisines/
+```
+
+#### Get a cuisine by id
+```
+http://localhost:1337/cuisines/<cuisine_type_id>
+```
+
 #### Get all restaurants
 ```
 http://localhost:1337/restaurants/
@@ -65,6 +85,16 @@ http://localhost:1337/restaurants/?is_favorite=true
 #### Get a restaurant by id
 ```
 http://localhost:1337/restaurants/<restaurant_id>
+```
+
+#### Get all restaurants by neighborhood
+```
+http://localhost:1337/restaurants/?neighborhood_type_id=<neighborhood_type_id>
+```
+
+#### Get all restaurants by cuisine
+```
+http://localhost:1337/restaurants/?cuisine_type_id=<cuisine_type_id>
 ```
 
 #### Get all reviews for a restaurant
